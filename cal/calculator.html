@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<title>
+Calculator</title>
+<link rel="stylesheet" href="calc.css"/>
+</head>
+<body>
+<form name="myForm" class="bb">
+<tr><td><h1 id="val">display</h1></td></tr>
+
+<table>
+<tr>
+<td><input type="button" onclick="SR('r')"       class="button number red" id="r" value="sqrt" disabled></td>
+<td><input type="button" onclick="back()"        class="button white"             value="<-"           ></td>
+<td><input type="button" onclick="SR('s')"       class="button red"        id="s" value="x^2"  disabled></td>
+<td><input type="button" onclick="insertOp('/')" class="button red"               value="/"            ></td>
+</tr>
+<tr>
+<td><input type="button" onclick="insertNum(7)"  class="button grey" value="7"></td>
+<td><input type="button" onclick="insertNum(8)"  class="button grey" value="8"></td>
+<td><input type="button" onclick="insertNum(9)"  class="button grey" value="9"></td>
+<td><input type="button" onclick="insertOp('*')"   class="button red"value="*"></td>
+</tr>
+<tr>
+<td><input type="button" onclick="insertNum(4)"  class="button grey" value="4"></td>
+<td><input type="button" onclick="insertNum(5)"  class="button grey" value="5"></td>
+<td><input type="button" onclick="insertNum(6)"  class="button grey" value="6"></td>
+<td><input type="button" onclick="insertOp('-')" class="button red"  value="-"></td>
+</tr>
+<tr>
+<td><input type="button" onclick="insertNum(1)"  class="button grey" value="1"></td>
+<td><input type="button" onclick="insertNum(2)"  class="button grey" value="2"></td>
+<td><input type="button" onclick="insertNum(3)"  class="button grey" value="3"></td>
+<td><input type="button" onclick="insertOp('+')" class="button red"  value="+"></td>
+</tr>
+<tr>
+<td><input type="button" onclick="cle()"       class="button orange" value="C"></td>
+<td><input type="button" onclick="insertNum(0)"  class="button grey"   value="0"></td>
+<td><input type="button" onclick="insertDec()"class="button grey"   value="."></td>
+<td><input type="button" onclick="equalTo('=')"  class="button green"  value="="></td>
+</tr>
+</table>
+</form>
+</body>
+<script src="calcjava.js" type="text/javascript"></script>
+</html>
